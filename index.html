@@ -25,14 +25,14 @@
                 </ul>
             </nav> 
             <ul class="navigator__contakt-list">
-                <li class="navigator__contakt-item" tabindex="0">
+                <li class="navigator__contakt-item">
                     <a href="mailto:info@devstudio.com" class="navigator__contakt-link" >
                         <svg width="16px"; height="12px"; class="navigator__contakt-item-envelope">
                             <use href="images/symbol-defs.svg#icon-mail"></use>
                         </svg>info@devstudio.com
                     </a>
                 </li>
-                <li class="navigator__contakt-item" tabindex="0">                  
+                <li class="navigator__contakt-item">                  
                     <a href="tel:+38 096 111 11 11" class="navigator__contakt-link" >
                         <svg width="10px"; height="16px"; class="navigator__contakt-item-envelope">
                             <use href="images/symbol-defs.svg#icon-phone"></use>
@@ -127,7 +127,7 @@
                             </div>
                             
                         </li>
-                        <li class="section__aboutus-item last">
+                        <li class="section__aboutus-item">
                             <div class="aboutus-img-block">
                                 <img src="images/grafic.jpg" alt="графика" class="section__aboutus-img">
                                 <div class="aboutus-text">
@@ -395,10 +395,27 @@
                         </li>
                     </ul>  
             </div>
+            <div class="footer-send">
+
+                <form class="footer-form" method="POST">
+                    <h3 class="footer-form-head">
+                        Подпишитесь на рассылку
+                    </h3>
+                    <label class="footer-form-text" for="e-mail"></label>
+                    <input class="footer-form-input" type="email" placeholder="E-mail" name="e-mail" id="e-mail">
+                    <button class="footer-form-btn" type="submit">
+                        Подписаться
+                        <svg width="20"; height="20"; class="footer-form-img">
+                            <use href="images/symbol.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+
+            </div>
             
         </div>        
     </footer>
-    <div class="backdroup is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close><img src="images/close.jpg" alt=""></button>
             <h1 class="form-header">
@@ -406,25 +423,36 @@
             </h1>
             <form class="form" method="POST">
                 <div class="form-filde">
+                    
                     <label for="name" class="form-label">
                         Имя
                     </label>                   
                     <input id="name" type="text" name="name" placeholder=" ">
+                    <svg width="18"; height="18"; class="backdrop-icon">
+                        <use href="images/symbol.svg#icon-person"></use>
+                    </svg>
                 </div>
                     
                 
                 <div class="form-filde">
+            
                     <label for="tel" class="form-label">
                         Телефон
                     </label>
                     <input id="tel" type="tel" name="tel" placeholder=" ">
-
+                    <svg width="18"; height="18"; class="backdrop-icon">
+                        <use href="images/symbol.svg#icon-phone"></use>
+                    </svg>
                 </div>    
                 <div class="form-filde">
+                    
                     <label for="email" class="form-label">
                         Почта
                     </label>
                     <input id="email" type="email" name="email" placeholder=" ">
+                    <svg width="18"; height="18"; class="backdrop-icon">
+                        <use href="images/symbol.svg#icon-mail"></use>
+                    </svg>
                 </div>
 
                 <div class="form-textarea">
