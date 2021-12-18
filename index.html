@@ -417,7 +417,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-btn" data-modal-close><img src="images/close.jpg" alt=""></button>
+            <button type="button" class="modal-btn" data-modal-close>
+                <svg width="18"; height="18"; class="cklose">
+                    <use href="images/ckros.svg#close"></use>
+                </svg>
+            </button>
             <h1 class="form-header">
                 Оставьте свои данные, мы вам перезвоним
             </h1>
@@ -427,7 +431,7 @@
                     <label for="name" class="form-label">
                         Имя
                     </label>                   
-                    <input id="name" type="text" name="name" placeholder=" ">
+                    <input class="input-form" autocomplete="off" id="name" type="text" name="name">
                     <svg width="18"; height="18"; class="backdrop-icon">
                         <use href="images/symbol.svg#icon-person"></use>
                     </svg>
@@ -439,7 +443,7 @@
                     <label for="tel" class="form-label">
                         Телефон
                     </label>
-                    <input id="tel" type="tel" name="tel" placeholder=" ">
+                    <input autocomplete="off" class="input-form" id="tel" type="tel" name="tel">
                     <svg width="18"; height="18"; class="backdrop-icon">
                         <use href="images/symbol.svg#icon-phone"></use>
                     </svg>
@@ -449,7 +453,7 @@
                     <label for="email" class="form-label">
                         Почта
                     </label>
-                    <input id="email" type="email" name="email" placeholder=" ">
+                    <input autocomplete="off" class="input-form" id="email" type="email" name="email">
                     <svg width="18"; height="18"; class="backdrop-icon">
                         <use href="images/symbol.svg#icon-mail"></use>
                     </svg>

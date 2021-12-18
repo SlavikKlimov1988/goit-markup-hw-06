@@ -793,6 +793,37 @@ img {
   box-sizing: border-box;
   border-radius: 50%;
 }
+.cklose {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -25%);
+  fill: #000000;
+}
+.cklose {
+  fill: currentColor;
+}
+.modal-btn:hover {
+  color: #2196f3;
+}
+.modal-btn:focus {
+  color: #2196f3;
+}
+.input-form {
+  position: relative;
+}
+.backdrop-icon {
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 15px;
+  fill: #212121;
+}
+.backdrop-icon:hover {
+  fill: currentColor;
+}
+.backdrop-icon:focus {
+  fill: currentColor;
+}
 /*----------------form-----------------------*/
 
 .form {
@@ -811,18 +842,37 @@ img {
 .form-filde {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 28px;
 }
 .form-filde input {
   margin: 0;
-  padding: 0;
+  padding-left: 40px;
   height: 40px;
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form-filde input:focus {
+.form-filde:focus-within input {
   border-color: #2196f3;
+}
+.form-filde input:focus {
+  border: 1px solid #2196f3;
+  color: #2196f3;
+}
+input:focus {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
+input:hover {
+  border: 1px solid #2196f3;
+  color: #2196f3;
+}
+input:hover ~ .backdrop-icon {
+  fill: #2196f3;
+}
+input:focus ~ .backdrop-icon {
+  fill: #2196f3;
 }
 
 textarea {
