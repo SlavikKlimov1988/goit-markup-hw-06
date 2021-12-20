@@ -348,7 +348,7 @@
     </main>
     <footer class="footer">
         <div class="conteiner footer-navigate">
-            <div>
+            <div class="footer-first-block">
                 <a href="#" class="footer__href-logo">
                     <span class="footer__logo">Web</span><span class="footer__studio">Studiio</span>
                 </a>
@@ -397,10 +397,10 @@
             </div>
             <div class="footer-send">
 
-                <form class="footer-form" method="POST">
-                    <h3 class="footer-form-head">
+                <form class="footer-form">
+                    <p class="footer-form-head">
                         Подпишитесь на рассылку
-                    </h3>
+                    </p>
                     <div class="block-labal">
                         <label class="footer-form-text" for="e-mail"></label>
                     <input class="footer-form-input" type="email" placeholder="E-mail" name="e-mail" id="e-mail">
@@ -425,10 +425,10 @@
                     <use href="images/ckros.svg#close"></use>
                 </svg>
             </button>
-            <h1 class="form-header">
+            <p class="form-header">
                 Оставьте свои данные, мы вам перезвоним
-            </h1>
-            <form class="form" method="POST">
+            </p>
+            <form class="form">
                 <div class="form-filde">
                     
                     <label for="name" class="form-label">
@@ -469,11 +469,13 @@
                     <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
                 </div>
 
-                <div class="form-checkbox">
-                    <input type="checkbox" name="done" value="Соглашаюсь с рассылкой и принимаю" id="check">
+                <div class="form-checkbox">                    
                     <label for="check" class="form-label-check">
+                        <input class="checkbox" type="checkbox" name="check" value="Соглашаюсь с рассылкой и принимаю" id="check">
                         Соглашаюсь с рассылкой и принимаю<a href="#">Условия договора</a>
+                        <span class="form-check-icon"></span>
                     </label>
+                    
                 </div>
                 
                 <button class="form-btn" type="submit">Отправить</button>
