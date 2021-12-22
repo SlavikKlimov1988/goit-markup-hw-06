@@ -819,7 +819,7 @@ img {
   top: 50%;
   background-color: #fff;
   transform: translate(-50%, -50%);
-  padding: 0 40px;
+  padding: 40px 40px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -847,7 +847,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-25%, -25%);
+  transform: translate(-27%, -29%);
   fill: #000000;
 }
 .cklose {
@@ -864,7 +864,7 @@ img {
 }
 .backdrop-icon {
   position: absolute;
-  top: 25px;
+  top: 28px;
   left: 12px;
   fill: #212121;
 }
@@ -879,21 +879,24 @@ img {
 .form {
 }
 .checkbox {
+  appearance: none;
   position: absolute;
-  white-space: nowrap;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
   margin: -1px;
 }
+.checkbox:checked + .form-check-icon {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  background-image: url(/goit-markup-hw-06/images/check-done.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .form-check-icon {
-  position: absolute;
-  left: -5%;
-  top: 15%;
+  display: block;
+  margin-right: 9px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -945,6 +948,7 @@ input:focus ~ .backdrop-icon {
 
 textarea {
   height: 120px;
+  padding: 10px 10px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -967,21 +971,16 @@ textarea {
   margin-bottom: 4px;
 }
 .form-checkbox {
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   margin-bottom: 30px;
 }
 .form-checkbox a {
   color: #2196f3;
 }
-.form-label-check:checked + .form-check-icon {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  background-image: url(goit-markup-hw-06/images/check-done.svg);
-  background-size: contain;
-  background-origin: border-box;
+.form-label-check {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .form-checkbox input[type="checkbox"] {
   border-color: #212121;
@@ -990,9 +989,6 @@ textarea {
   margin-left: 12px;
 }
 .form-label-check {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
   font-family: Roboto;
   font-size: 14px;
   line-height: 24px;
